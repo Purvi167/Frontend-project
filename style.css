@@ -1,0 +1,104 @@
+:root {
+    --ink: #1f2a44;
+    --muted: #4b5563;
+    --paper: #ffffff;
+    --wash: #eef4f3;
+    --acent: #0f766e;
+    --accent-dark: #115e59;
+    --highlight: #115e59;
+    --line: #d6dde0;
+    --feild-border: #6b7a7f;
+    --error: #b42318;
+    --radius: #8px;
+    --space: 1rem;
+
+}
+*,
+*::before,
+*::after,{
+    box-sizing: border-box;
+
+}
+body{
+    margin:0;
+    font-family:system-ui,-apple-sytem,"segoe UI",Roboto,ubuntu,"Helvetica"
+    font-size:
+    line-height: 1:5;
+    color: var(--link);
+    backgrond-color: var(--paper);
+
+}
+
+h1,
+h2,
+h3, {
+    font-family: Georgia,  Cambria, "Times New Roman", Times,  serif;
+    line-height:1.2;
+
+}
+h1{
+    margin: 0 0 0.5rem;0;
+    front-size: clamp(2rem, 6w, 3.2rem)
+}
+
+a{
+    color: var(--acent);
+}
+a:hover {
+    text-decoration-thickness:  3px;
+}
+:focus-visile{
+    outline:  3px solid var(--ink);
+    outline-offset:  2px;
+
+}
+img{
+    max-width: 100;
+    height:auto;
+
+}
+.skip-link {
+    position: absolute;
+    top: -4rem;
+    left:var(--space);
+    padding:0.5rem 1rem;
+    color: var(--papee);
+    background-color: var(--ink);
+}
+header{
+    padding: 3rem max(var(--space), calc((100%- 60rem)/2)) 2rem;
+    background-color: var(--wash);
+    border-bottom: 4px solid var(--acent);
+
+}
+header > p {
+    max-width: 60ch;
+    margin-top:0;
+    color: var(--muted);
+
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    list-style: ,-moz-element();
+}
+nav a{
+    font-weight: 600;
+    text-underline-offset: 0.25rem;;
+}
+main {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 0 vae(--space);
+}
+section{
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--line);
+    
+}
+section:last-child{
+    border-bottom: none;
+}
